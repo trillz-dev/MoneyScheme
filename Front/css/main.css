@@ -1,0 +1,144 @@
+/* Body */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+.header {
+    width: 1349px;
+    height: 43px;
+}
+
+.navbar-nav {
+    position: absolute;
+    height: 17px;
+    right: 11.75%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+    text-align: right;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    padding-bottom: 33px;
+}
+
+.signup {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    background: #2477E6;
+    border-radius: 5px;
+}
+
+/* Main */
+
+/* Hero Section */
+
+.hero-page {
+    padding-top: 150px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 2024.24px; */
+    font-family: SF Pro Display;
+}
+
+.hero-content {
+    width: 591px;
+    height: 367px;
+}
+
+.content-header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 68px;
+    width: 350px;
+}
+
+.content-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    width: 370px;
+}
+
+.content-button {
+    width: 150px;
+    background: linear-gradient(180deg, #FF805A 0%, #FF6348 100%);
+    box-shadow: 0px 22px 34px rgba(46, 61, 102, 0.347118);
+    border-radius: 8px;
+}
+
+.content-btn {
+    color: #FFFFFF;
+}
+
+.button-arrow {
+    padding-left: 30px;
+}
+
+.hero-image {
+    /* position: absolute;
+    width: 900px;
+    height: 900px;
+    background: linear-gradient(45deg, #1C5AE0 0%, #53A0FD 50.11%, #51CAEC 100%);
+    mix-blend-mode: normal;
+    transform: rotate(-18deg);
+    clip: rect(); */
+}
+
+.hero-img {
+    position: absolute;
+    left: 50px;
+    top: -450px;
+    width: 1300px;
+    height: 900px;
+    background: linear-gradient(45deg, #1C5AE0 0%, #53A0FD 50.11%, #51CAEC 100%);
+    mix-blend-mode: normal;
+    opacity: 0.88;
+    transform: rotate(-20deg);
+    border-radius: 15%;
+}
+
+/* .video {
+    padding-top: 150px;
+}
+
+.play-icon {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: 350px;
+    top: 250px;
+}
+
+.play-oval-1 {
+    position: absolute;
+    right: 352px;
+    top: 240px;
+    z-index: -1;
+
+    height: 50px;
+    width: 50px;
+    background: #1C6BE6;
+    border-radius: 50%;
+} */
+

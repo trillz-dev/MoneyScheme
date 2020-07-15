@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/371f85bd51.js" crossorigin="anonymous"></script>
     <!-- Main Css -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/Front/css/main.css">
     <title>money-scheme</title>
 </head>
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="logo"><img class="img-fluid" src="" alt=""></div>
+    <header class="header">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+            <div class="logo">
+                <a href=""><img class="img-fluid" src="" alt=""></a>
+            </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,18 +40,22 @@
                         <a class="nav-link" href="#">login</a>
                     </li>
                 </ul>
+
             </div>
+
+            <button class="signup btn">sign up</button>
         </nav>
-        <button class="signup">sign up</button>
     </header>
 
+
+    
     <!-- Main -->
     <main>
 
         <!-- Hero-page -->
-        <section>
+        <section class="hero-page"> 
             <div class="hero-container">
-                <div class="content">
+                <div class="hero-content">
                     <div class="content-header">
                         <h1>Invest your money today!</h1>
                     </div>
@@ -53,16 +63,20 @@
                         <p>It's super simple - As soon as your payment is received, you will earn your first profit of 50% in 3 days and subsequent investment in 7 days</p>
                     </div>
                     <div class="content-button">
-                        <button>get started</button>
+                        <button class="content-btn btn">Get Started <span><i class="button-arrow fas fa-arrow-right"></i></span></button>
                     </div>
                 </div>
 
                 <div class="video">
-                    <div class="play"></div>
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                    <div class="play-oval-1"></div>
                     <div class="video-text">
                         <p>watch one minute video</p>
                     </div>
                 </div>
+            </div>
+            <div class="hero-image">
+                <img class="hero-img img-fluid" src="images/dollor image.webp" alt="">
             </div>
         </section>
 
@@ -160,6 +174,45 @@
                         <button>get started</button>
                     </b-button>
                 </div>
+            </div>
+        </section>
+
+        <!-- Section C -->
+        <section>
+            <div class="sectionC-container">
+                <div class="c-images">
+                    <img class="img-fluid" src="" alt="">
+                </div>
+                <div class="c-right">
+                    <div class="c-header">
+                        <h1>view your transaction history in your dashboard</h1>
+                    </div>
+                    <div class="c-facts">
+                        <div class="facts-1">
+                            <div class="facts-number">
+                                <p>1M</p>
+                            </div>
+                            <div class="facts-text">
+                                <p>Active Users</p>
+                            </div>
+                        </div>
+                        <div class="facts-2">
+                            <div class="facts-number">
+                                <p>30K</p>
+                            </div>
+                            <div class="facts-text">
+                                <p>Positive Review</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section>
+            <div class="testimonial-container">
+
             </div>
         </section>
     </main>    
