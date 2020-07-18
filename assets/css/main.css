@@ -1,0 +1,193 @@
+/* Body */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+
+.btn-pri {
+    background: linear-gradient(180deg, #FF805A 0%, #FF6348 100%);
+    box-shadow: 0px 22px 34px rgba(255, 99, 72, 0.170998);
+    border-radius: 8px;
+    width: 160px;
+    height: 50px;
+    padding-right: 20px;
+    margin-right: 10px;
+    
+}
+
+.btnPRI-icon {
+    margin-left: 30px;
+}
+
+.btn-sec {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2D3136;
+    background: #FFFFFF;
+    border: 1px solid #E0E8F7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 160px;
+    height: 50px;
+}
+
+
+/* Base Section */
+
+.base {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.base-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.bullets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 492px;
+    margin-bottom: 10px;
+}
+
+.paragraph-icon {
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.paragraph-header {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.paragraph-text {
+    width: 380px;
+    font-size: 10px;
+}
+
+.base-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+.base-header {
+    text-transform: capitalize;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    color: #2D3136;
+
+}
+
+.base-button {
+    margin-top: 30px;
+}
+
+
+/* Section A */
+
+.sectionA-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-left {
+    width: 479px;
+    height: 319px;
+}
+
+.a-button{
+    
+}
+
+.a-image {
+    width: 513px;
+    height: 420px;
+}
+
+
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.upper-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.col {
+    margin-left: 10px;
+}
+
+.footer-title {
+    text-transform: capitalize;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+
+    /* identical to box height */
+
+    color: #313339;
+}
+
+.footer-link {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+    text-decoration: none;
+    text-decoration-style: dotted;
+
+    /* or 212% */
+
+    color: #7D8188;
+
+
+}
