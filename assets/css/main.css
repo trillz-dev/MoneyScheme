@@ -240,19 +240,19 @@
 .c-title {
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 56px;
+    font-size: 38px;
+    line-height: 45px;
     color: #2D3136;
-    width: 400px;
+    width: 350px;
 }
 
 .c-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 8px !important;
+    font-size: 14px;
     line-height: 26px;
     color: #818992;
-    width: 420px;
+    width: 350px;
 }
 
 .c-facts {
@@ -262,17 +262,106 @@
 
 .facts-1 {
     width: 75px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .facts-2 {
-    width: 100px;
+    width: 98px;
 }
 
 /* Testimonial */
 
+.testimonial {
+    
+}
 
+.testimonial-container {
+    background-color: #2D3136;
+    height: 400px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.testimonial-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: red;
+    color: white;
+}
+
+.testimonial-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #F6F7F8;
+}
+
+/* FAQs */
+
+.faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+}
+
+.question-section {
+    width: 350px;
+}
+
+.faq-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 56px;
+    color: #2D3136;
+}
+
+.faq-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #818992;
+}
+
+.question-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2D3136;
+    text-decoration: none;
+}
+
+.more-questions {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2D3136;
+}
+
+.faq-image {
+    width: 500px;
+}
 
 
 
