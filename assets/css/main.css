@@ -16,7 +16,9 @@
     padding-right: 20px;
     margin-right: 10px;
     color: #FFFFFF;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnPRI-icon {
@@ -68,6 +70,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     width: 492px;
     margin-bottom: 10px;
 }
@@ -81,14 +84,14 @@
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 28px;
     line-height: 25px;
     margin-bottom: 10px;
 }
 
 .paragraph-text {
     width: 380px;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .base-right {
@@ -111,6 +114,8 @@
 
 .base-button {
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -140,17 +145,17 @@
 .a-header {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 38px;
     line-height: 56px;
     color: #2D3136;
-    width: 300px;
+    width: 350px;
     margin-bottom: 10px;
 }
 
 .a-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 6px;
+    font-size: 17px;
     line-height: 26px;
     color: #818992;
     width: 400px;
@@ -160,6 +165,11 @@
 .a-image {
     width: 513px;
     height: 420px;
+}
+
+.a-button {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Section B */
@@ -192,7 +202,7 @@
 .b-header {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 48px;
     line-height: 56px;
     color: #2D3136;
     width: 300px;
@@ -202,10 +212,10 @@
 .b-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 6px;
+    font-size: 17px;
     line-height: 26px;
     color: #818992;
-    width: 400px;
+    width: 450px;
     margin-bottom: 50px;
 }
 
@@ -282,25 +292,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .testimonial-title {
     font-style: normal;
     font-weight: 300;
     font-size: 48px;
-    line-height: 56px;
     text-align: center;
-    color: red;
     color: white;
 }
 
-.testimonial-text {
+.testimonial-caption {
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
     line-height: 26px;
     text-align: center;
     color: #F6F7F8;
+    width: 500px;
 }
 
 /* FAQs */
@@ -363,6 +373,46 @@
     width: 500px;
 }
 
+/* CTA */
+
+.cta {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 222px;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    position: relative;
+    top: -190px;
+}
+
+.cta-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #313339;
+    margin-bottom: 7px;
+}
+
+.cta-caption {
+    font-size: 12px;
+    color: #818992
+}
 
 
 /* Footer */
