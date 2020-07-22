@@ -282,35 +282,47 @@
 /* Testimonial */
 
 .testimonial {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D3136;
+    margin-top: 150px;
 }
 
 .testimonial-container {
-    background-color: #2D3136;
-    height: 400px;
-    margin-top: 150px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 700px;
+}
+
+.testimonial-header {
+    margin-bottom: 50px;
 }
 
 .testimonial-title {
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 38px;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
+    margin-bottom: 15px;
 }
 
 .testimonial-caption {
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 12px;
+    line-height: 20px;
     text-align: center;
     color: #F6F7F8;
     width: 500px;
+}
+
+.testimonial-slides {
+    width: 400px;
 }
 
 /* FAQs */
@@ -417,55 +429,61 @@
 
 /* Footer */
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 511px;
+}
+
 .footer-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .footer-upper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.upper-left {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 50%;
+    align-items: flex-start;
 }
 
 .col {
-    margin-left: 10px;
+    width: 250px;
 }
 
 .footer-title {
     text-transform: capitalize;
-    
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 25px;
-
-    /* identical to box height */
-
+    font-weight: 400;
+    font-size: 20px;
     color: #313339;
 }
 
 .footer-link {
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: normal;
+    margin-top: 10px;
+    text-transform: capitalize;
     font-size: 16px;
-    line-height: 34px;
     text-decoration: none;
-    text-decoration-style: dotted;
-
-    /* or 212% */
-
     color: #7D8188;
+}
 
+.footer-lower {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
 
+.footer-text-1, .footer-text-2, .footer-text-3 {
+    font-size: 12px;
+}
+
+.footer-text-2 {
+    margin-left: 50px;
+}
+
+.footer-text-3 {
+    margin-left: 500px;
 }
