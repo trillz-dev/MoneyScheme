@@ -55,6 +55,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 1000px;
 }
 
@@ -72,7 +73,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 492px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .paragraph-icon {
@@ -86,7 +87,7 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .paragraph-text {
