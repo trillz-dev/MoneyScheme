@@ -40,6 +40,10 @@
     height: 50px;
 }
 
+.text-black {
+    color: #2D3136;
+}
+
 
 /* Base Section */
 
@@ -690,4 +694,58 @@
     position: relative;
     top: 200px;
     z-index: -1;
+}
+
+
+
+/* SIGN-UP PAGE */
+
+.sign-up-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 676px;
+    height: 818px;
+}
+
+.sign-up-header {
+    margin-bottom: 80px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 520px;
+    height: 530px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 520px;
+    height: 93px;
+}
+
+#fullName, #email, #password, #confirmPassword {
+    background: #FFFFFF;
+    border: 1px solid #E2E6EA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* width: 350px; */
+    height: 40px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    padding-left: 15px;
 }
