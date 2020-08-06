@@ -541,6 +541,7 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
+     margin-bottom: 100px;
 }
 
 .about__feature-container {
@@ -582,3 +583,86 @@
     width: 275px;
 }
 
+
+/* More About */
+
+.about__more-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about__more-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.more-header {
+    text-align: center;
+    width: 500px;
+}
+
+.more-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .more-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+.row-image {
+    width: 70px;
+}
+
+/* CTA */
+
+.about__CTA-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about__CTA-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.about__CTA-title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    color: #2D3136;
+    width: 400px;
+}
+
+.about__CTA-caption {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #818992;
+    width: 550px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about__CTA-btn {
+    width: 160px;
+    background: #4777F4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.177395);
+    border-radius: 5px;
+}
