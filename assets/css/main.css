@@ -1322,3 +1322,41 @@ input[type=text], input[type=email], input[type=password] {
 /* input[type=email], input[type=password] {
     padding-left: 15px;
 } */
+
+
+
+/* SIGN-UP SUCCESS PAGE */
+
+/* Success Section */
+
+.success-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 135px;
+    height: 500px;
+}
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.success-img {
+    width: 400px;
+    height: 310px;
+    margin-bottom: 30px;
+}
+
+.success-title {
+    font-size: 54px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.success-caption {
+    font-size: 17px;
+}
