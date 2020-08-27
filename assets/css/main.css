@@ -1360,3 +1360,84 @@ input[type=text], input[type=email], input[type=password] {
 .success-caption {
     font-size: 17px;
 }
+
+
+/* ADD-BANK PAGE */
+
+/* Add Section */
+
+.bg-color {
+    background-color: #F9F8F7 !important;
+}
+
+.add-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1440px;
+    height: 650px;
+}
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 450px;
+    width: 480px;
+    margin-top: 125px;
+    border-radius: 10px;
+}
+
+.add-header {
+    /* width: 400px; */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add-title {
+    font-style: normal;
+    font-weight: 500;
+    color: #0F1222;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.add-caption {
+    font-size: 16px;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: 300;
+    color: #535875;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    width: 350px;
+}
+
+.add-form {
+    width: 400px;
+}
+
+.acct-number {
+    width: 400px;
+    height: 38px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: #F9F8F7;
+    margin-bottom: 30px;
+}
+
+.select-options {
+    background-color: #F9F8F7;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    margin-left: 200px;
+    background-color: #FF7B5E;
+    color: #FFFFFF;
+    width: 200px;
+    height: 45px;
+}
