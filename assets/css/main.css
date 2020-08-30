@@ -1218,6 +1218,62 @@
 
 
 
+
+
+/* PRIVACY-TERM PAGE */
+
+
+.privacy-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 150px;
+    margin-bottom: 150px;
+    background: #F9F8F7;
+}
+
+.privacy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1050px;
+    background: #F9F8F7;
+
+}
+
+.privacy-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.privacy-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.privacy-list-number {
+    margin-right: 15px;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.privacy-term {
+    font-size: 22px;
+    color: #0F1222;
+    width: 1000px;
+}
+
+
+
+
+
 /* SIGN-UP PAGE */
 
 .sign-up-section {
