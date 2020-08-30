@@ -1531,13 +1531,13 @@ main {
     border-radius: 50px;
 }
 
-.main_body {
+.main_dashboard {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.main_body-container {
+.main_dashboard-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1566,4 +1566,153 @@ main {
 .main_hero-btn {
     width: 150px;
     background: linear-gradient(180deg, #FF9676 0%, #FF6348 100%);
+}
+
+
+/* TRANSACTION PAGE */
+
+
+.main_transaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main_transaction-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaction-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.transaction-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 961px;
+    height: 21px;
+}
+
+.table-title {
+    font-size: 14px;
+    line-height: 18px;
+    color: #535875;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.table-row-wrapper {
+    width: 1110px;
+    height: 60px;
+    background-color: #FFFFFF;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 961px;
+}
+
+
+/* SETTINGS PAGE */
+
+.main_setting {
+    width: 1035px;
+    height: 535px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0357507);
+    margin: 25px;
+}
+
+.setting-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    margin-left: 57.5px;
+    height: 45px;
+    
+}
+
+.setting-link {
+    color: #0F1222;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.setting-item-5 {
+    margin-left: 330px;
+}
+
+.setting-nav-btn {
+    width: 130px;
+    background-color: #535875;
+    color: #FFFFFF;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 215px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 25px;
+}
+
+.profile-img {
+    width: 82.19px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.profile-name {
+    font-size: 20px;
+    line-height: 25px;
+    color: #0F1222;
+}
+
+.profile-username {
+    color: #535875;
+    mix-blend-mode: normal;
+    opacity: 0.74;
+    font-size: 16px;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 860px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 410px
+}
+
+.profile-fname, 
+.profile-lname,
+.profile-email,
+.profile-password,
+.profile-phone {
+    border: 1px solid #535875;
+    height: 45px;
+    border-radius: 5px;
 }
