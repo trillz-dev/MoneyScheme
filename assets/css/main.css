@@ -1716,3 +1716,39 @@ main {
     height: 45px;
     border-radius: 5px;
 }
+
+
+
+/* SETTINGS-SECURITY PAGE */
+
+.security-section {
+    margin-left: 70px;
+    margin-top: 35px;
+}
+
+.security-title {
+    font-size: 20px;
+    color: #0F1222;
+}
+
+.security-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 860px;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.security-question,
+.security-answer {
+    border: 1px solid #535875;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.security-btn {
+    width: 130px;
+    background-color: #535875;
+    color: #FFFFFF;
+}
