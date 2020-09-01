@@ -531,7 +531,7 @@
 /* Header */
 
 header {
-    width: 100px;
+    width: 500px !important;
 }
 
 
