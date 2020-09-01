@@ -531,12 +531,12 @@
 /* Header */
 
 header {
-    width: 500px !important;
+    width: 100% !important;
 }
 
 .main-wrapper,
 .navigation {
-    max-width: 500px !important;
+    max-width: 100% !important;
 }
 
 
