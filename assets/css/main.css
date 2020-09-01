@@ -447,6 +447,7 @@
     justify-content: center;
     align-items: center;
     height: 350px;
+    /* background-color: #353A40; */
 }
 
 .footer-container {
@@ -474,14 +475,12 @@
 
 .footer-cta-title {
     font-size: 24px;
-    /* margin-bottom: 5px; */
 }
 
 .footer-cta-caption {
     font-weight: 400;
     font-size: 18px;
     color: #313339;
-    /* margin-bottom: -15px; */
 }
 
 .footer-cta-form {
@@ -519,13 +518,11 @@
 .footer-lower {
     display: flex;
     justify-content: flex-start;
-    /* margin-top: 30px; */
 }
 
 .footer-lower-text {
     font-size: 12.5px;
     line-height: 26px;
-    /* width: 1100px; */
 }
 
 
@@ -570,7 +567,7 @@
 
 .sectionA-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     height: 650px;
@@ -717,15 +714,23 @@
 /* FAQs */
 
 .faq {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .faq-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .question-section {
     margin-bottom: 30px;
+}
+
+.faq-header {
+    margin-top: 20px;
+}
+
+.faq-title {
+    font-size: 24px;
 }
 
 .faq-image {
@@ -771,65 +776,87 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 450px;
-    margin-top: 250px;
+    height: 100%;
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 1100px;
 }
 
 .footer-upper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 650px;
+    margin-bottom: 20px;
+    height: 500px;
     text-align: center;
 }
 
 .col {
-    width: 250px;
+    width: 350px;
 }
 
-.footer-title {
+.footer-link {
     text-transform: capitalize;
     font-weight: 400;
     font-size: 20px;
     color: #313339;
 }
 
-.footer-link {
-    margin-top: 10px;
-    text-transform: capitalize;
+.footer-cta-title {
+    font-size: 24px;
+}
+
+.footer-cta-caption {
+    font-weight: 400;
     font-size: 18px;
-    text-decoration: none;
-    color: #7D8188;
+    color: #313339;
+}
+
+.footer-cta-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-cta-input {
+    width: 350px !important;
+    height: 40px;
+    border: 1px solid #FF805A;
+    border-radius: 8px;
+}
+
+.footer-cta-btn {
+    background: linear-gradient(180deg, #FF805A 0%, #FF6348 100%);
+    box-shadow: 0px 22px 34px rgba(255, 99, 72, 0.170998);
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -40px;
+    left: 230px;
+}
+
+.footer-cta-icon {
+    padding-left: 15px;
 }
 
 .footer-lower {
     display: flex;
     justify-content: flex-start;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-top: 30px; */
 }
 
-.footer-text-1, .footer-text-2, .footer-text-3 {
-    font-size: 12px;
+.footer-lower-text {
+    font-size: 12.5px;
+    line-height: 26px;
+    /* width: 1100px; */
 }
-
-.footer-text-2 {
-    margin-left: 20px;
-}
-
-.footer-text-3 {
-    margin-left: 20px;
-}
-
-
 
 
 
