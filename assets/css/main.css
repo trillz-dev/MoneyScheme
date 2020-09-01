@@ -528,6 +528,13 @@
 
 @media screen and (max-width: 500px) {
 
+/* Header */
+
+header {
+    width: 100px;
+}
+
+
 /* Base Section */
 
 .base {
@@ -1341,6 +1348,9 @@
     font-size: 12px;
     line-height: 20px;
     color: #2D3136;
+}
+@media screen and (max-width: 500px) {
+
 }
 
 
