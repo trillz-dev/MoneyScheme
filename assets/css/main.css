@@ -362,6 +362,12 @@
     color: #2D3136;
 }
 
+.question-icon {
+    margin-bottom: -3.5px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
 .faq-text {
     font-style: normal;
     font-weight: normal;
@@ -440,14 +446,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: 350px;
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 1100px;
 }
 
 .footer-upper {
@@ -455,44 +458,76 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .col {
-    width: 250px;
+    width: 350px;
 }
 
-.footer-title {
+.footer-link {
     text-transform: capitalize;
     font-weight: 400;
     font-size: 20px;
     color: #313339;
 }
 
-.footer-link {
-    margin-top: 10px;
-    text-transform: capitalize;
-    font-size: 16px;
-    text-decoration: none;
-    color: #7D8188;
+.footer-cta-title {
+    font-size: 24px;
+    /* margin-bottom: 5px; */
+}
+
+.footer-cta-caption {
+    font-weight: 400;
+    font-size: 18px;
+    color: #313339;
+    /* margin-bottom: -15px; */
+}
+
+.footer-cta-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-cta-input {
+    width: 350px !important;
+    height: 40px;
+    border: 1px solid #FF805A;
+    border-radius: 8px;
+}
+
+.footer-cta-btn {
+    background: linear-gradient(180deg, #FF805A 0%, #FF6348 100%);
+    box-shadow: 0px 22px 34px rgba(255, 99, 72, 0.170998);
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -40px;
+    left: 230px;
+}
+
+.footer-cta-icon {
+    padding-left: 15px;
 }
 
 .footer-lower {
     display: flex;
     justify-content: flex-start;
-    margin-top: 100px;
+    /* margin-top: 30px; */
 }
 
-.footer-text-1, .footer-text-2, .footer-text-3 {
-    font-size: 12px;
+.footer-lower-text {
+    font-size: 12.5px;
+    line-height: 26px;
+    /* width: 1100px; */
 }
 
-.footer-text-2 {
-    margin-left: 50px;
-}
-
-.footer-text-3 {
-    margin-left: 500px;
-}
 
 @media screen and (max-width: 500px) {
 
@@ -1238,8 +1273,6 @@
     justify-content: center;
     align-items: center;
     width: 1050px;
-    background: #F9F8F7;
-
 }
 
 .privacy-title {
@@ -1625,6 +1658,141 @@ main {
 }
 
 
+
+
+
+/* DASHBOARD-ACTIVE PAGE */
+
+.main_active-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main_active-dashboard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.profile-summary {
+    width: 360px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0357507);
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-summary-img {
+    position: relative;
+    top: -40px;
+    left: 135px;
+}
+
+.profile-summary-name {
+    font-size: 22px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.profile-summary-contact-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-summary-contact-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 320px;
+    margin-bottom: 15px;
+}
+
+.profile-summary-contact-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    background: #FAFBFC;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.profile-summary-contact-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    background: #FAFBFC;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile-summary-info-title{
+    font-size: 14px;
+}
+
+.profile-summary-info {
+    font-size: 15px;
+}
+
+.profile-summary-bank-wrapper {
+    margin-bottom: 30px;
+}
+
+.profile-summary-bank-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 320px;
+    margin-bottom: 15px;
+}
+
+.profile-summary-bank-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    background: #FAFBFC;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.profile-summary-bank-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    background: #FAFBFC;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.account-summary {
+    width: 640px;
+    background: #2D3136;
+}
+
+
+
+
 /* TRANSACTION PAGE */
 
 
@@ -1653,7 +1821,7 @@ main {
     justify-content: space-between;
 }
 
-.table-header {
+.transaction-table-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1661,7 +1829,7 @@ main {
     height: 21px;
 }
 
-.table-title {
+.transaction-table-title {
     font-size: 14px;
     line-height: 18px;
     color: #535875;
@@ -1669,13 +1837,13 @@ main {
     opacity: 0.5;
 }
 
-.table-row-wrapper {
+.transaction-table-body {
     width: 1110px;
     height: 60px;
     background-color: #FFFFFF;
 }
 
-.table-row {
+.transaction-table-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1721,7 +1889,42 @@ main {
 }
 
 .investment-table {
-    margin-left: 70px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.investment-table-title {
+    font-size: 14px;
+    line-height: 18px;
+    color: #535875;
+    mix-blend-mode: normal;
+    opacity: 0.84;
+}
+
+.investment-table-body {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.investment-table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.table-row {
+    margin-bottom: 20px !important;
 }
 
 
