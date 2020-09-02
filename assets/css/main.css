@@ -1457,13 +1457,41 @@
     border: 1px solid #E2E6EA;
     box-sizing: border-box;
     border-radius: 10px;
-    /* width: 350px; */
     height: 40px;
 }
 
 input[type=text], input[type=email], input[type=password] {
     padding-left: 15px;
 }
+
+@media screen and (max-width: 500px) {
+    .sign-up-section {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .sign-up-container {
+        width: 330px;
+        /* height: 818px; */
+    }
+    
+    .sign-up-header {
+        margin-bottom: 30px;
+    }
+    
+    .sign-up-form {
+        width: 330px;
+        margin-bottom: -50px;
+    }
+    
+    .sign-up-form-group {
+        width: 330px;
+        height: 93px;
+    }
+
+}
+
+
 
 
 /* SIGN-IN PAGE */
@@ -1522,21 +1550,13 @@ input[type=text], input[type=email], input[type=password] {
 @media screen and (max-width: 500px) {
 
     .sign-in-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
         margin-top: -70px;
         margin-bottom: -50px;
-        /* width: 300px; */
     }
     
     .sign-in-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 818px;
-        width: 300px;
+        width: 330px;
     }
     
     .sign-in-header {
@@ -1544,30 +1564,14 @@ input[type=text], input[type=email], input[type=password] {
     }
     
     .sign-in-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 300px;
+        width: 330px;
         margin-top: -80px;
         margin-bottom: -150px;
-        /* height: 300px; */
     }
     
     .sign-in-form-group {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 300px;
+        width: 330px;
         height: 93px;
-    }
-    
-    #email, #password {
-        background: #FFFFFF;
-        border: 1px solid #E2E6EA;
-        box-sizing: border-box;
-        border-radius: 10px;
-        /* width: 350px; */
-        height: 40px;
     }
 
 }
