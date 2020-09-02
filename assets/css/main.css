@@ -533,7 +533,7 @@
 
 .base {
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .base-container {
@@ -589,20 +589,25 @@
 
 .a-left {
     width: 300px;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .a-header {
     font-weight: 600;
     font-size: 35px;
     line-height: 46px;
-    width: 350px;
+    width: 300px;
     margin-bottom: 10px;
 }
 
 .a-text {
     width: 300px;
     margin-bottom: 30px;
+}
+
+.a-image {
+    width: 370px;
+    height: 300px;
 }
 
 
@@ -624,7 +629,7 @@
 }
 
 .b-right {
-    width: 350px;
+    width: 300px;
     height: 0px;
 }
 
