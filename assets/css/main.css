@@ -1519,6 +1519,62 @@ input[type=text], input[type=email], input[type=password] {
 } */
 
 
+@media screen and (max-width: 500px) {
+
+    .sign-in-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -70px;
+        margin-bottom: -50px;
+        /* width: 300px; */
+    }
+    
+    .sign-in-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 818px;
+        width: 300px;
+    }
+    
+    .sign-in-header {
+        margin-bottom: 20px;
+    }
+    
+    .sign-in-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        margin-top: -80px;
+        margin-bottom: -150px;
+        /* height: 300px; */
+    }
+    
+    .sign-in-form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 300px;
+        height: 93px;
+    }
+    
+    #email, #password {
+        background: #FFFFFF;
+        border: 1px solid #E2E6EA;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* width: 350px; */
+        height: 40px;
+    }
+
+}
+
+
+
+
 
 /* SIGN-UP SUCCESS PAGE */
 
@@ -1555,6 +1611,16 @@ input[type=text], input[type=email], input[type=password] {
 .success-caption {
     font-size: 17px;
 }
+
+@media screen and (max-width: 500px) {
+    
+
+}
+
+
+
+
+
 
 
 /* ADD-BANK PAGE */
