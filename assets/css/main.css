@@ -1358,16 +1358,32 @@
 @media screen and (max-width: 500px) {
 
     .faq-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 150px;
+        /* height: 600px; */
     }
     
     .faq-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
-  
+    /* .faq-hero-img {
+        width: 375px;
+        height: 200px;
+    } */
+    
     .faq-body {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         margin-top: 30px;
     }
@@ -1391,6 +1407,10 @@
 
     .card-body {
         font-size: 10px;
+    }
+    
+    .more-questions {
+        color: #2D3136;
     }
 
     .faq-mobile-hr {
