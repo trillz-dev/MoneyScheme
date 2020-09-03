@@ -17,12 +17,30 @@
         $(this).parent().css("background-repeat", "no-repeat");
         $(this).hide();
     });
-
+    
 })(jQuery);
 
+// Field Check
+
+// const fieldCheck = (valueToCheck) => {
+//     const valueToValidate = document.getElementById(valueToCheck).value;
+//     const valueToValidateInput = document.getElementById(valueToCheck);
+//     const warningElement = `${valueToCheck}Warning`;
+
+//     if (valueToValidate.length >= 1) {
+//         valueToValidateInput.classList.remove('error-input');
+//         document.getElementById(warningElement).classList.add('hidden');
+//     } else if (valueToValidate.length < 1) {
+//         valueToValidateInput.classList.add('error-input');
+//         document.getElementById(warningElement).remove('hidden');
+//     }
+// }
 
 
-// FORM VALIDATION
+
+
+
+// SIGN-UP FORM VALIDATION
 
 // Email Check
 
@@ -43,21 +61,6 @@ const emailCheck = () => {
 }
 
 
-// Field Check
-
-// const fieldCheck = (valueToCheck) => {
-//     const valueToValidate = document.getElementById(valueToCheck).value;
-//     const valueToValidateInput = document.getElementById(valueToCheck);
-//     const warningElement = `${valueToCheck}Warning`;
-
-//     if (valueToValidate.length >= 1) {
-//         valueToValidateInput.classList.remove('error-input');
-//         document.getElementById(warningElement).classList.add('hidden');
-//     } else if (valueToValidate.length < 1) {
-//         valueToValidateInput.classList.add('error-input');
-//         document.getElementById(warningElement).remove('hidden');
-//     }
-// }
 
 
 const nameCheck = () => {
@@ -105,18 +108,13 @@ const confirmCheck = () => {
 
 
 
-
-
-
 const submitCheck = (e) => {
     e.preventDefault();
     emailCheck();
+    passwordCheck();
     nameCheck();
     passwordCheck();
     confirmCheck();
-    // fieldCheck('fullName');
-    // fieldCheck('password');
-    // fieldCheck('confirmPassword');
 }
 
 const submitClick = document.getElementById('submit-btn');

@@ -1315,6 +1315,15 @@
     align-items: center;
 }
 
+.faq-hero {
+    margin-top: 80px;
+}
+
+.faq-hero-img {
+    height: 300px;
+    /* width: 1000px; */
+}
+
 .faq-body {
     display: flex;
     flex-direction: row;
@@ -1473,8 +1482,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .sign-up-container {
@@ -1483,11 +1492,11 @@
     justify-content: center;
     align-items: center;
     width: 676px;
-    height: 818px;
+    /* height: 818px; */
 }
 
 .sign-up-header {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .sign-up-form {
@@ -1495,7 +1504,7 @@
     flex-direction: column;
     justify-content: center;
     width: 520px;
-    height: 530px;
+    /* height: 530px; */
 }
 
 .sign-up-form-group {
@@ -1541,13 +1550,12 @@ input[type=text], input[type=email], input[type=password] {
 
 @media screen and (max-width: 500px) {
     .sign-up-section {
-        margin-top: 20px;
-        margin-bottom: 50px;
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
     
     .sign-up-container {
         width: 330px;
-        /* height: 818px; */
     }
     
     .sign-up-header {
@@ -1556,7 +1564,7 @@ input[type=text], input[type=email], input[type=password] {
     
     .sign-up-form {
         width: 330px;
-        margin-bottom: -50px;
+        margin-bottom: -20px;
     }
     
     .sign-up-form-group {
@@ -1579,8 +1587,8 @@ input[type=text], input[type=email], input[type=password] {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 200px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .sign-in-container {
@@ -1589,7 +1597,6 @@ input[type=text], input[type=email], input[type=password] {
     justify-content: center;
     align-items: center;
     width: 676px;
-    height: 818px;
 }
 
 .sign-in-header {
@@ -1601,7 +1608,8 @@ input[type=text], input[type=email], input[type=password] {
     flex-direction: column;
     justify-content: center;
     width: 520px;
-    height: 530px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .sign-in-form-group {
@@ -1612,41 +1620,37 @@ input[type=text], input[type=email], input[type=password] {
     height: 93px;
 }
 
-#email, #password {
+/* #sign-in-password {
     background: #FFFFFF;
     border: 1px solid #E2E6EA;
     box-sizing: border-box;
     border-radius: 10px;
-    /* width: 350px; */
     height: 40px;
-}
+} */
 
 
 @media screen and (max-width: 500px) {
 
     .sign-in-section {
-        margin-top: -70px;
-        margin-bottom: -50px;
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
     
     .sign-in-container {
-        height: 818px;
         width: 330px;
     }
     
     .sign-in-header {
-        margin-bottom: 20px;
+        margin-bottom: -20px;
     }
     
     .sign-in-form {
         width: 330px;
-        margin-top: -80px;
-        margin-bottom: -150px;
+        margin-bottom: -20px;
     }
     
     .sign-in-form-group {
         width: 330px;
-        height: 93px;
     }
 
 }

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <!-- Icon Font Awesome -->
-    <script src="https://kit.fontawesome.com/371f85bd51.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/371f85bd51.js" crossorigin="anonymous"></script> -->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
     <link href="assets/fonts/SFProDisplay.css" rel="stylesheet">
     <!-- Main Css -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>money-scheme</title>
 </head>
 <body>
@@ -64,20 +64,22 @@
                     <div class="sign-in-form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Enter email address">
+                        <p class="hidden error-msg" id="emailWarning">Email cannot be empty!</p>
                     </div>
 
                     <div class="sign-in-form-group">
                         <label for="password">Password</label>
                         <input type="password" id="password" placeholder="******">
+                        <p class="hidden error-msg" id="passwordWarning">Password cannot be empty!</p>
                     </div>
 
                     <div class="sign-in-form-group">
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Login</button>
                     </div>
                 </form>
 
                 <div class="sign-in-footer">
-                    <p>Don't have an account? <a href="/sign-in.html">Create one now</a></p>
+                    <p>Don't have an account? <a href="./sign-in.html">Create one now</a></p>
                 </div>
             </div>
         </section>
@@ -162,7 +164,7 @@
 
 
     <!-- JS, Popper.js, and jQuery -->
-    <script src="assets/js/script.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/script.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
