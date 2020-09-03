@@ -40,7 +40,7 @@
 
 
 
-// SIGN-UP FORM VALIDATION
+// FORM VALIDATION
 
 // Email Check
 
@@ -59,9 +59,6 @@ const emailCheck = () => {
     }
 
 }
-
-
-
 
 const nameCheck = () => {
     const fullName = document.getElementById('fullName').value;
