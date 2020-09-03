@@ -1350,7 +1350,69 @@
     line-height: 20px;
     color: #2D3136;
 }
+
 @media screen and (max-width: 500px) {
+
+    .faq-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+        /* height: 600px; */
+    }
+    
+    .faq-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .faq-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 100px;
+    }
+    
+    .faq_question-left {
+        width: 330px;
+    }
+    
+    .faq_question-right {
+        width: 330px;
+    }
+    
+    .faq_question-icon {
+        margin-bottom: -3.5px;
+        margin-right: 5px;
+        font-size: 18px;
+    }
+    
+    .faq_question-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 28px;
+        color: #2D3136;
+        text-decoration: none;
+    }
+
+    .card-body {
+        font-size: 10px;
+    }
+    
+    .more-questions {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 20px;
+        color: #2D3136;
+    }
 
 }
 
@@ -1542,10 +1604,6 @@ input[type=text], input[type=email], input[type=password] {
     height: 40px;
 }
 
-/* input[type=email], input[type=password] {
-    padding-left: 15px;
-} */
-
 
 @media screen and (max-width: 500px) {
 
@@ -1617,7 +1675,31 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 @media screen and (max-width: 500px) {
+    .success-section {
+        margin-top: 150px;
+        margin-bottom: 100px;
+        /* height: 500px; */
+    }
     
+    .success-container {
+        width: 330px;
+    }
+    
+    .success-img {
+        width: 330px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .success-title {
+        font-size: 34px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    
+    .success-caption {
+        font-size: 17px;
+    }
 
 }
 
