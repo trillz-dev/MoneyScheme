@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <!-- Icon Font Awesome -->
-    <script src="https://kit.fontawesome.com/371f85bd51.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/371f85bd51.js" crossorigin="anonymous"></script> -->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
     <link href="assets/fonts/SFProDisplay.css" rel="stylesheet">
@@ -60,29 +60,33 @@
                     <h1>Sign up</h1>
                 </div>
 
-                <form method="get" action="" class="sign-up-form">
+                <form method="get" action="" class="sign-up-form" id="sign-up-form">
                     <div class="sign-up-form-group">
                         <label for="fullName">Full Name</label>
                         <input type="text" name="name" id="fullName" placeholder="Enter your full name">
+                        <p class="hidden error-msg" id="fullNameWarning">Full Name cannot be empty!</p>
                     </div>
 
                     <div class="sign-up-form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="Enter email address">
+                        <p class="hidden error-msg" id="emailWarning">Email cannot be empty!</p>
                     </div>
 
                     <div class="sign-up-form-group">
                         <label for="password">Password</label>
                         <input type="password" id="password" placeholder="******">
+                        <p class="hidden error-msg" id="passwordWarning">Password cannot be empty!</p>
                     </div>
 
                     <div class="sign-up-form-group">
                         <label for="confirmPassword">Confirm Password</label>
                         <input type="password" id="confirmPassword" placeholder="******">
+                        <p class="hidden error-msg" id="confirmPasswordWarning">Confirm Password cannot be empty!</p>
                     </div>
 
                     <div class="sign-up-form-group">
-                        <button type="submit" class="btn btn-primary">Create account</button>
+                        <button id="submit-btn" type="submit" class="btn btn-primary">Create account</button>
                     </div>
                 </form>
 
@@ -172,7 +176,7 @@
 
 
     <!-- JS, Popper.js, and jQuery -->
-    <script src="assets/js/script.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/script.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
