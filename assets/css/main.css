@@ -1525,7 +1525,7 @@
 
 .error-input {
     border: 2px solid hsl(0, 100%, 74%) !important;
-    background-image: url(/assets/images/icon-error.svg) !important;
+    background-image: url(./assets/images/icon-error.svg) !important;
     background-position: 94% center !important;
     background-repeat: no-repeat !important;
     background-size: 4% !important;
