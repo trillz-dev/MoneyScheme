@@ -1,0 +1,75 @@
+
+      <!-- Header -->
+      <%- include('includes/header.ejs') %>
+
+      <section class="sign-up-section">
+        <div class="sign-up-container">
+          <div class="sign-up-header">
+            <h1>Sign up</h1>
+          </div>
+
+          <form method="get" action="" class="sign-up-form" id="sign-up-form">
+            <div class="sign-up-form-group">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="fullName"
+                placeholder="Enter your full name"
+              />
+              <p class="hidden error-msg" id="fullNameWarning">
+                Full Name cannot be empty!
+              </p>
+            </div>
+
+            <div class="sign-up-form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email address"
+              />
+              <p class="hidden error-msg" id="emailWarning">
+                Email cannot be empty!
+              </p>
+            </div>
+
+            <div class="sign-up-form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="******" />
+              <p class="hidden error-msg" id="passwordWarning">
+                Password cannot be empty!
+              </p>
+            </div>
+
+            <div class="sign-up-form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="******"
+              />
+              <p class="hidden error-msg" id="confirmPasswordWarning">
+                Confirm Password cannot be empty!
+              </p>
+            </div>
+
+            <div class="sign-up-form-group">
+              <button id="submit-btn" type="submit" class="btn btn-primary">
+                Create account
+              </button>
+            </div>
+          </form>
+
+          <div class="sign-up-footer">
+            <p>
+              Already have an account? <a href="/sign-in.html">Login now</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Footer -->
+      <%- include('includes/footer.ejs') %>
