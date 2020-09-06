@@ -27,5 +27,15 @@ exports.login = (req, res, next) => {
 };
 
 exports.signup = (req, res, next) => {
-  res.render('mainsite/sign-up')
-}
+  res.render('mainsite/sign-up', {
+    pageTitle: 'Sign Up',
+    path: '/sign-up',
+  });
+};
+
+exports.policy = (req, res, next) => {
+  res.render('mainsite/privacy-term', {
+    pageTitle: 'Policy, Terms & Conditions',
+    path: '/policy',
+  });
+};

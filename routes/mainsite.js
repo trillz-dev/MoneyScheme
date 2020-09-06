@@ -15,7 +15,7 @@ router.get('/faqs', mainsiteController.faq);
 
 router.get('/login', mainsiteController.login);
 
-// router.get('/', mainsiteController.signup);
+router.get('/sign-up', mainsiteController.signup);
 
 
 

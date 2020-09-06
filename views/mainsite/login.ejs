@@ -1,49 +1,49 @@
-      <!-- Header -->
-      <%- include('includes/header.ejs') %>
+<!-- Header -->
+<%- include('../includes/header-dark.ejs') %>
 
-      <section class="sign-in-section">
-        <div class="sign-in-container">
-          <div class="sign-in-header">
-            <h1>Sign in</h1>
-          </div>
+<section class="sign-in-section">
+<div class="sign-in-container">
+  <div class="sign-in-header">
+    <h1>Sign in</h1>
+  </div>
 
-          <form method="get" action="" class="sign-in-form">
-            <div class="sign-in-form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter email address"
-              />
-              <p class="hidden error-msg" id="emailWarning">
-                Email cannot be empty!
-              </p>
-            </div>
+  <form method="get" action="" class="sign-in-form">
+    <div class="sign-in-form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter email address"
+      />
+      <p class="hidden error-msg" id="emailWarning">
+        Email cannot be empty!
+      </p>
+    </div>
 
-            <div class="sign-in-form-group">
-              <label for="password">Password</label>
-              <input type="password" id="password" placeholder="******" />
-              <p class="hidden error-msg" id="passwordWarning">
-                Password cannot be empty!
-              </p>
-            </div>
+    <div class="sign-in-form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="******" />
+      <p class="hidden error-msg" id="passwordWarning">
+        Password cannot be empty!
+      </p>
+    </div>
 
-            <div class="sign-in-form-group">
-              <button type="submit" class="btn btn-primary" id="submit-btn">
-                Login
-              </button>
-            </div>
-          </form>
+    <div class="sign-in-form-group">
+      <button type="submit" class="btn btn-primary" id="submit-btn">
+        Login
+      </button>
+    </div>
+  </form>
 
-          <div class="sign-in-footer">
-            <p>
-              Don't have an account? <a href="./sign-in.html">Create one now</a>
-            </p>
-          </div>
-        </div>
-      </section>
+  <div class="sign-in-footer">
+    <p>
+      Don't have an account? <a href="./sign-in.html">Create one now</a>
+    </p>
+  </div>
+</div>
+</section>
 
-      <hr />
+<hr />
 
-      <%- include('includes/footer.ejs') %>
+<%- include('../includes/footer.ejs') %>
 
