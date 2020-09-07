@@ -17,6 +17,8 @@ router.get('/login', mainsiteController.login);
 
 router.get('/sign-up', mainsiteController.signup);
 
+router.get('/policy', mainsiteController.policy);
+
 
 
 module.exports = router;

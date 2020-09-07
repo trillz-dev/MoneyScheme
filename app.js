@@ -14,12 +14,8 @@ const errorController = require('./controller/error')
 
 app.use(express.static('public'));
 
-// app.get('/', (req, res, next) => {
-//   res.render('mainsite/index');
-// });
-
 app.use(mainsiteRoutes);
-// app.use('/dashboard', dashboardRoutes);
+app.use('/dashboard', dashboardRoutes);
 // app.use(errorController.get404);
 
 app.listen(3000);

@@ -34,7 +34,7 @@ exports.signup = (req, res, next) => {
 };
 
 exports.policy = (req, res, next) => {
-  res.render('mainsite/privacy-term', {
+  res.render('mainsite/privacy-terms', {
     pageTitle: 'Policy, Terms & Conditions',
     path: '/policy',
   });
