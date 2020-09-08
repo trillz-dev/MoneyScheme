@@ -15,7 +15,7 @@ exports.active = (req, res, next) => {
 exports.transactions = (req, res, next) => {
     res.render('dashboard/transactions', {
         pageTitle: 'Transactions',
-        path: '/transactions',
+        path: '/dashboard/transactions',
     });
 };
 

@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.get('/', dashboardController.main);
 
-router.get('/transaction', dashboardController.transactions);
+router.get('/dashboard/transactions', dashboardController.transactions);
 
 // router.get('/', dashboardController.active);
 // router.get('/investments', dashboardController.investments);
