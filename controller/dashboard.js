@@ -1,5 +1,5 @@
 exports.main = (req, res, next) => {
-    res.render('dashboard/dashboard-main', {
+    res.render('dashboard/dashboard', {
         pageTitle: 'Dashboard',
         path: '/'
     });
