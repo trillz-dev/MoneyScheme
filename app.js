@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require('express');
+const ejs = require('ejs');
 const connectDB = require('./config/db');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
@@ -21,32 +22,19 @@ app.use(bodyParser.urlencoded({
 dotenv.config({ path: './config/config.env'})
 
 // Connect Mongoose
-// const connectDB = async () => {
-//     try {
-//         const conn = await mongoose.connect(process.env.MONGO_URI, {
-//             useNewUrlParser: true,
-//             useUnifiedTopology: true,
-//             useFindAndModify: false,
-//         })
-//         console.log(`MongoDB Connected: ${conn.connection.host}`)
-//     } catch (err) {
-//         console.error(err)
-//         process.exit(1)
-//     }
-// }
 connectDB();
 
 
 // Routes
 const mainsiteRoutes = require('./routes/mainsite');
-const dashboardRoutes = require('./routes/dashboard');
-const registerRoutes = require('./controller/register');
-const errorController = require('./controller/error');
+const registerRoutes = require('./routes/register');
+// const dashboardRoutes = require('./routes/dashboard');
+// const errorController = require('./controller/error');
 
 
 app.use(mainsiteRoutes);
-app.use('/dashboard', dashboardRoutes);
 app.use(registerRoutes);
+// app.use('/dashboard', dashboardRoutes);
 // app.use(errorController.get404);
 
 

@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
 const User = require('../Models/User')
 
-const register = ('/sign-up', (req, res) => {
+exports.register = ('/sign-up', (req, res, next) => {
     const newUser = User({
-        name: req.body.fullname,
+        name: req.body.name,
         email: req.body.email,
         password: req.body.password,
         confirm: req.body.confirmpassword
@@ -13,9 +13,8 @@ const register = ('/sign-up', (req, res) => {
         if (err) {
             console.log(err);
         } else {
-            res.render('dashboard/dashboard')
+            // res.send('Data is sent to DB')
+            res.render('mainsite/add-bank')
         }
     });
 });
-
-module.exports = register

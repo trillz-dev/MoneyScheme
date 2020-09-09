@@ -39,3 +39,10 @@ exports.policy = (req, res, next) => {
     path: '/policy',
   });
 };
+
+// exports.bank = (req, res, next) => {
+//   res.render('mainsite/add-bank', {
+//     pageTitle: 'Add-bank',
+//     path: '/bank'
+//   });
+// }
