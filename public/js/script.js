@@ -106,7 +106,7 @@ const confirmCheck = () => {
 
 
 const submitCheck = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     emailCheck();
     passwordCheck();
     nameCheck();

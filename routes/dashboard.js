@@ -6,7 +6,7 @@ const dashboardController = require("../controller/dashboard");
 
 const router = express.Router();
 
-router.get("/", dashboardController.main);
+// router.get("/", dashboardController.main);
 
 router.get("/transactions", dashboardController.transactions);
 

@@ -8,12 +8,12 @@
     <h1>Sign up</h1>
   </div>
 
-  <form method="get" action="" class="sign-up-form" id="sign-up-form">
+  <form method="POST" action="/sign-up" class="sign-up-form" id="sign-up-form">
     <div class="sign-up-form-group">
       <label for="fullName">Full Name</label>
       <input
         type="text"
-        name="name"
+        name="fullname"
         id="fullName"
         placeholder="Enter your full name"
       />
@@ -26,6 +26,7 @@
       <label for="email">Email</label>
       <input
         type="email"
+        name="email"
         id="email"
         placeholder="Enter email address"
       />
@@ -36,7 +37,7 @@
 
     <div class="sign-up-form-group">
       <label for="password">Password</label>
-      <input type="password" id="password" placeholder="******" />
+      <input type="password" id="password" placeholder="******" name="password" />
       <p class="hidden error-msg" id="passwordWarning">
         Password cannot be empty!
       </p>
@@ -48,6 +49,7 @@
         type="password"
         id="confirmPassword"
         placeholder="******"
+        name="confirmpassword"
       />
       <p class="hidden error-msg" id="confirmPasswordWarning">
         Confirm Password cannot be empty!
