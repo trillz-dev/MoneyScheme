@@ -20,27 +20,11 @@
     
 })(jQuery);
 
-// Field Check
-
-// const fieldCheck = (valueToCheck) => {
-//     const valueToValidate = document.getElementById(valueToCheck).value;
-//     const valueToValidateInput = document.getElementById(valueToCheck);
-//     const warningElement = `${valueToCheck}Warning`;
-
-//     if (valueToValidate.length >= 1) {
-//         valueToValidateInput.classList.remove('error-input');
-//         document.getElementById(warningElement).classList.add('hidden');
-//     } else if (valueToValidate.length < 1) {
-//         valueToValidateInput.classList.add('error-input');
-//         document.getElementById(warningElement).remove('hidden');
-//     }
-// }
 
 
 
 
-
-// FORM VALIDATION
+// SIGN_UP FORM VALIDATION 
 
 // Email Check
 
@@ -105,15 +89,21 @@ const confirmCheck = () => {
 
 
 
-const submitCheck = (e) => {
+const signUpCheck = (e) => {
     // e.preventDefault();
+    nameCheck();
     emailCheck();
     passwordCheck();
-    nameCheck();
-    passwordCheck();
-    confirmCheck();
-}
+    confirmCheck()
+};
 
-const submitClick = document.getElementById('submit-btn');
+const signUpClick = document.getElementById('sign-up-btn');
 
-submitClick.addEventListener('click', submitCheck);
+signUpClick.addEventListener('click', signUpCheck);
+
+
+
+
+
+
+

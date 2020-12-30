@@ -1,0 +1,571 @@
+<%- include('../includes/dashboard-header.ejs') %>
+
+    <!--main content wrapper-->
+    <div class="content-wrapper">
+
+        <div class="creative-state-area">
+            <div class="row">
+                <div class=" col-md-2 col-12 text-center text-md-left">
+                    <h4 class=" creative-state-title mb-0 mt-2">Dashboard</h4>
+                </div>
+                <div class=" col-md-10 col-12">
+                    <marquee onmouseover="this.stop();" onmouseout="this.start();">
+                        <ul class="list-unstyled marquee-list mt-2">
+                            <li class="text-info"> BTC $19.039232 </li>
+                            <li class="text-purple"> ETH $594.2765</li>
+                            <li class="text-primary">XRP $0.639231	</li>
+                            <li class="text-danger">BCH $89.588418 </li>
+                            <li class="text-success">LTC $161.154  </li>
+                            <li class="text-warning">TAT $0.551956 </li>
+                            <li class="text-purple-light">LIT $177.8018</li>
+                            <li class="text-info">NOTE $0.880632 </li>
+                        </ul>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4 basic-gradient text-light text-center">
+                        <div class="card-body py-5">
+                            <h2>Exchange your Crypto Currency</h2>
+                            <em class="f18">No Additional fees</em>
+
+                            <div class="row justify-content-md-center mt-5">
+                                <div class="col-lg-8 col-md-11 ">
+                                    <form>
+                                        <div class="form-row currency-converter">
+                                            <div class="col-md-3 col-6 ml-md-3 ml-0">
+                                                <input type="text" class="form-control" placeholder="0.01234">
+                                            </div>
+                                            <div class="col-md-2 col-6">
+                                                <select class="form-control">
+                                                    <option>BTC</option>
+                                                    <option>Bitcoin Cash</option>
+                                                    <option>Cardano</option>
+                                                    <option>Ethereum</option>
+                                                    <option>EOS</option>
+                                                    <option>Ripple</option>
+                                                    <option>NEO</option>
+                                                    <option>NEM</option>
+                                                    <option>Litecoin</option>
+                                                    <option>Stellar</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-1 col-12">
+                                                <strong class="f24">=</strong>
+                                            </div>
+
+                                            <div class="col-md-3 col-6">
+                                                <input type="text" class="form-control" placeholder="99.95">
+                                            </div>
+                                            <div class="col-md-2 col-6">
+                                                <select class="form-control">
+                                                    <option>USD</option>
+                                                    <option>EURO</option>
+                                                    <option>POUND</option>
+                                                    <option>RUPEE</option>
+                                                    <option>WON</option>
+                                                    <option>DINAR</option>
+                                                    <option>RIAL</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 mt-5">
+                                                <button type="button" class="btn btn-lg btn-exchange form-pill px-5">EXCHANGE</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-8 col-md-12">
+                    <div class="card card-shadow mb-4">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-primary">
+                                <div class="custom-title"> BTC/USD</div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row text-center mb-4">
+                                <div class="col-4">
+                                    <h4 class="mb-0">$120 </h4>
+                                    <small class="text-muted text-uppercase">Last Price</small>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="mb-0">$740</h4>
+                                    <small class="text-muted text-uppercase">Daily Changes</small>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="mb-0">1234.5678 BTC</h4>
+                                    <small class="text-muted text-uppercase">24 H Volume</small>
+                                </div>
+                            </div>
+                             <div id="candle_stick" style="height: 400px; "></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-12">
+                    <div class="card card-shadow mb-4">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-danger">
+                                <div class="custom-title">Data Tables Market</div>
+                                <div class="custom-post-title">Todays Currency price and changes</div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 pt-4">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">COIN</th>
+                                        <th scope="col">PRICE</th>
+                                        <th scope="col">CHANGE %</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <img class="mr-2" src="/images/crypto-icons/Golem.svg" width="16" alt=""/> <strong class="text-info">GOLEM</strong>
+                                        </td>
+                                        <td>$11.63</td>
+                                        <td>-5.91%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img class="mr-2" src="/images/crypto-icons/Bitcoin.svg" width="16" alt=""/> <strong class="text-warning">BTC</strong>
+                                        </td>
+                                        <td>$11,65.63</td>
+                                        <td>-16.23%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img class="mr-2" src="/images/crypto-icons/Litecoin.svg" width="16" alt=""/> <strong class="text-muted">LBC</strong>
+                                        </td>
+                                        <td>$875.00</td>
+                                        <td>-122.01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img class="mr-2" src="/images/crypto-icons/Netko-coin.svg" width="16" alt=""/> <strong class="text-danger">NEO</strong>
+                                        </td>
+                                        <td>$123.43</td>
+                                        <td>-43.01%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img class="mr-2" src="/images/crypto-icons/Steem.svg" width="16" alt=""/> <strong class="text-info">STE</strong>
+                                        </td>
+                                        <td>$342.63</td>
+                                        <td>-9.00%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img class="mr-2" src="/images/crypto-icons/EOS.svg" width="16" alt=""/> <strong class="text-dark">EOS</strong>
+                                        </td>
+                                        <td>$1211.63</td>
+                                        <td>-15.91%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img class="mr-2" src="/images/crypto-icons/LanaCoin.svg" width="16" alt=""/><strong class="text-warning">LIT</strong>
+                                        </td>
+                                        <td>$43.63</td>
+                                        <td>-4.34%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img class="mr-2" src="/images/crypto-icons/NEM.svg" width="16" alt=""/> <strong class="text-success">NEM</strong>
+                                        </td>
+                                        <td>$1091.63</td>
+                                        <td>-23.12%</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card-shadow mb-4">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-success">
+                                <div class="custom-title">Bitcoin BTC</div>
+                                <div class="custom-post-title">0.00000434 BTC</div>
+                                <div class=" widget-action-link">
+                                    <div class="text-warning weight700">$5,679</div>
+                                    <small class="text-muted">$25</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="crypto_chart_1" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card-shadow mb-4">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-success">
+                                <div class="custom-title">Litecoin LTC</div>
+                                <div class="custom-post-title">0.00000434 LTC</div>
+                                <div class=" widget-action-link">
+                                    <div class="text-info weight700">$4,364</div>
+                                    <small class="text-muted">$25</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="crypto_chart_2" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card-shadow mb-4">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-success">
+                                <div class="custom-title">NEO</div>
+                                <div class="custom-post-title">0.00000434 NEO</div>
+                                <div class=" widget-action-link">
+                                    <div class="text-success weight700">$3,479</div>
+                                    <small class="text-muted">$25</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="crypto_chart_3" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card-shadow mb-4">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-success">
+                                <div class="custom-title">Ethereum ETH</div>
+                                <div class="custom-post-title">0.00000434 BTC</div>
+                                <div class=" widget-action-link">
+                                    <div class="text-purple weight700">$5,679</div>
+                                    <small class="text-muted">$25</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="crypto_chart_4" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card-shadow mb-4">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-success">
+                                <div class="custom-title">Bitcoin BTC</div>
+                                <div class="custom-post-title">0.00000434 BTC</div>
+                                <div class=" widget-action-link">
+                                    <div class="text-warning weight700">$5,679</div>
+                                    <small class="text-muted">$25</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="crypto_chart_5" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card card-shadow mb-4">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-success">
+                                <div class="custom-title">Ripple XRP</div>
+                                <div class="custom-post-title">0.00000434 BTC</div>
+                                <div class=" widget-action-link">
+                                    <div class="text-primary weight700">$5,679</div>
+                                    <small class="text-muted">$25</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="crypto_chart_6" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-shadow mb-4 ">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-warning">
+                                <div class="custom-title">Sell Order</div>
+                                <div class=" widget-action-link">
+                                    <div class="dropdown">
+                                        <a href="#" class="btn btn-transparent text-secondary dropdown-hover p-0" data-toggle="dropdown" aria-expanded="false">
+                                            Sorting <i class="fa fa-caret-down pl-2"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right vl-dropdown" x-placement="bottom-end">
+                                            <a class="dropdown-item" href="#"> Assending</a>
+                                            <a class="dropdown-item" href="#"> Dessending</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 pt-4">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="text-primary">Price per BTC</th>
+                                        <th scope="col">BTC Ammount</th>
+                                        <th scope="col">Total ($)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td> 1089887 </td>
+                                        <td>0.3323234234</td>
+                                        <td>$2765.35</td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1089887 </td>
+                                        <td>0.3323234234</td>
+                                        <td>$2765.35</td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1089887 </td>
+                                        <td>0.3323234234</td>
+                                        <td>$2765.35</td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1089887 </td>
+                                        <td>0.3323234234</td>
+                                        <td>$2765.35</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-shadow mb-4 ">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-info">
+                                <div class="custom-title">Buy Order</div>
+                                <div class=" widget-action-link">
+                                    <div class="dropdown">
+                                        <a href="#" class="btn btn-transparent text-secondary dropdown-hover p-0" data-toggle="dropdown" aria-expanded="false">
+                                            Sorting <i class="fa fa-caret-down pl-2"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right vl-dropdown" x-placement="bottom-end">
+                                            <a class="dropdown-item" href="#"> Assending</a>
+                                            <a class="dropdown-item" href="#"> Dessending</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 pt-4">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="text-primary">Price per BTC</th>
+                                        <th scope="col">BTC Ammount</th>
+                                        <th scope="col">Total ($)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td> 1089887 </td>
+                                        <td>0.3323234234</td>
+                                        <td>$2765.35</td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1089887 </td>
+                                        <td>0.3323234234</td>
+                                        <td>$2765.35</td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1089887 </td>
+                                        <td>0.3323234234</td>
+                                        <td>$2765.35</td>
+                                    </tr>
+                                    <tr>
+                                        <td> 1089887 </td>
+                                        <td>0.3323234234</td>
+                                        <td>$2765.35</td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card card-shadow mb-4 ">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-warning">
+                                <div class="custom-title">Recent Trading activities</div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="text-primary">Deal ID Number</th>
+                                        <th scope="col">Trade Time</th>
+                                        <th scope="col">Last Trade</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td> CID 123456789 </td>
+                                        <td>17:22 AM</td>
+                                        <td>$77,7666</td>
+                                        <td><span class="badge badge-success py-2 px-3 form-pill">Complete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td> CID 123456789 </td>
+                                        <td>17:22 AM</td>
+                                        <td>$123123</td>
+                                        <td><span class="badge badge-warning py-2 px-3 form-pill">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td> CID 123456789 </td>
+                                        <td>17:22 AM</td>
+                                        <td>$45342</td>
+                                        <td><span class="badge badge-danger py-2 px-3 form-pill">Cancel</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td> CID 123456789 </td>
+                                        <td>17:22 AM</td>
+                                        <td>$98821</td>
+                                        <td><span class="badge badge-success py-2 px-3 form-pill">Complete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td> CID 123456789 </td>
+                                        <td>17:22 AM</td>
+                                        <td>$213123</td>
+                                        <td><span class="badge badge-danger py-2 px-3 form-pill">Cancel</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-shadow mb-4 ">
+                        <div class="card-header border-0">
+                            <div class="custom-title-wrap bar-info">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-transparent text-secondary dropdown-hover p-0 custom-title" data-toggle="dropdown" aria-expanded="false">
+                                        XRP <i class="fa fa-caret-down pl-2"></i>
+                                    </a>
+                                    <div class="dropdown-menu vl-dropdown" x-placement="bottom-end">
+                                        <a class="dropdown-item" href="javascript:;"> BTC</a>
+                                        <a class="dropdown-item" href="javascript:;"> Cardano</a>
+                                        <a class="dropdown-item" href="javascript:;"> Ethereum</a>
+                                        <a class="dropdown-item" href="javascript:;"> EOS</a>
+                                        <a class="dropdown-item" href="javascript:;"> Ripple</a>
+                                        <a class="dropdown-item" href="javascript:;"> NEO</a>
+                                        <a class="dropdown-item" href="javascript:;"> NEM</a>
+                                        <a class="dropdown-item" href="javascript:;"> Litecoin</a>
+                                        <a class="dropdown-item" href="javascript:;"> Stellar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="text-primary weight700">XRP / USD</div>
+                                            <div><small>20th Change</small></div>
+                                            <div><small>20th Volume</small></div>
+                                        </td>
+                                        <td>
+                                            <div class="text-primary weight700">1765.5</div>
+                                            <div><small class="text-success">176.3 USD (+3.5%)</small></div>
+                                            <div><small>1030.1908 XRP</small></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-primary weight700">XRP / GBP</div>
+                                            <div><small>20th Change</small></div>
+                                            <div><small>20th Volume</small></div>
+                                        </td>
+                                        <td>
+                                            <div class="text-primary weight700">1765.5</div>
+                                            <div><small class="text-danger">176.3 USD (+3.5%)</small></div>
+                                            <div><small>1030.1908 XRP</small></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-primary weight700">XRP / BTC</div>
+                                            <div><small>20th Change</small></div>
+                                            <div><small>20th Volume</small></div>
+                                        </td>
+                                        <td>
+                                            <div class="text-primary weight700">1765.5</div>
+                                            <div><small class="text-success">176.3 USD (+3.5%)</small></div>
+                                            <div><small>1030.1908 XRP</small></div>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--footer-->
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright &copy; 2020</small>
+                </div>
+            </div>
+        </footer>
+        <!--/footer-->
+    </div>
+    <!--/main content wrapper-->
+
+    <!--right sidebar-->
+    <%- include('../includes/dashboard-right-sidebar.ejs') %>
+
+    <!--basic scripts-->
+    <%- include('../includes/dashboard-script.ejs') %>
+
+

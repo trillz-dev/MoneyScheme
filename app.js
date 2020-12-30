@@ -10,7 +10,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname)));
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -22,19 +22,21 @@ app.use(bodyParser.urlencoded({
 dotenv.config({ path: './config/config.env'})
 
 // Connect Mongoose
-connectDB();
+// connectDB();
 
 
 // Routes
 const mainsiteRoutes = require('./routes/mainsite');
-const registerRoutes = require('./routes/register');
-// const dashboardRoutes = require('./routes/dashboard');
+const dashboardRoutes = require('./routes/dashboard');
+// const registerRoutes = require('./routes/register');
+// const loginRoutes = require('./routes/login');
 // const errorController = require('./controller/error');
 
 
 app.use(mainsiteRoutes);
-app.use(registerRoutes);
-// app.use('/dashboard', dashboardRoutes);
+app.use(dashboardRoutes);
+// app.use(registerRoutes);
+// app.use(loginRoutes);
 // app.use(errorController.get404);
 
 

@@ -1,7 +1,7 @@
 exports.main = (req, res, next) => {
-    res.render('dashboard/dashboard', {
+    res.render('dashboard/main', {
         pageTitle: 'Dashboard',
-        path: '/'
+        path: '/main'
     });
 };
 
@@ -15,7 +15,7 @@ exports.active = (req, res, next) => {
 exports.transactions = (req, res, next) => {
     res.render('dashboard/transactions', {
         pageTitle: 'Transactions',
-        path: '/dashboard/transactions',
+        path: '/transactions',
     });
 };
 
@@ -30,5 +30,12 @@ exports.settings = (req, res, next) => {
     res.render('dashboard/settings', {
         pageTitle: 'Settings',
         path: '/settings'
+    })
+}
+
+exports.support = (req, res, next) => {
+    res.render('dashboard/support', {
+        pageTitle: 'Support',
+        path: '/support'
     })
 }

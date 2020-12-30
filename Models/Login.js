@@ -6,3 +6,5 @@ const LoginSchema = new mongoose.Schema({
 });
 
 const Login = new mongoose.model('logins', LoginSchema)
+
+// module.exports = User = mongoose.model('user', LoginSchema)

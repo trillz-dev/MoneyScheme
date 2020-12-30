@@ -11,6 +11,8 @@ const User = require('../Models/User')
 
 router.post('/sign-up', registerController.register);
 
+// router.post('/login', registerController.login)
+
 
 module.exports = router
 
